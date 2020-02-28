@@ -1,0 +1,6 @@
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\FindPrimeNumber\bin\Debug\FindPrimeNumber.exe.config
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\FindPrimeNumber\bin\Debug\FindPrimeNumber.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\FindPrimeNumber\bin\Debug\FindPrimeNumber.pdb
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\FindPrimeNumber\obj\Debug\FindPrimeNumber.csproj.CoreCompileInputs.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\FindPrimeNumber\obj\Debug\FindPrimeNumber.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\FindPrimeNumber\obj\Debug\FindPrimeNumber.pdb

@@ -1,0 +1,6 @@
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\ArrayOperate\bin\Debug\ArrayOperate.exe.config
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\ArrayOperate\bin\Debug\ArrayOperate.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\ArrayOperate\bin\Debug\ArrayOperate.pdb
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\ArrayOperate\obj\Debug\ArrayOperate.csproj.CoreCompileInputs.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\ArrayOperate\obj\Debug\ArrayOperate.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\ArrayOperate\obj\Debug\ArrayOperate.pdb

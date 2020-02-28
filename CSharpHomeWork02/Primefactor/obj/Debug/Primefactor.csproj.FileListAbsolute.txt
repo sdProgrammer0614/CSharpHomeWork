@@ -1,0 +1,7 @@
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\Primefactor\bin\Debug\Primefactor.exe.config
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\Primefactor\bin\Debug\Primefactor.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\Primefactor\bin\Debug\Primefactor.pdb
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\Primefactor\obj\Debug\Primefactor.csprojAssemblyReference.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\Primefactor\obj\Debug\Primefactor.csproj.CoreCompileInputs.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\Primefactor\obj\Debug\Primefactor.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork02\Primefactor\obj\Debug\Primefactor.pdb
