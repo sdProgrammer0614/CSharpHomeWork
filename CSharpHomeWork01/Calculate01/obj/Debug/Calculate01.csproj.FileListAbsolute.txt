@@ -1,0 +1,13 @@
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork01\Calculate01\bin\Debug\Calculate01.exe.config
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork01\Calculate01\bin\Debug\Calculate01.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork01\Calculate01\bin\Debug\Calculate01.pdb
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork01\Calculate01\obj\Debug\Calculate01.csprojAssemblyReference.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork01\Calculate01\obj\Debug\Calculate01.csproj.CoreCompileInputs.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork01\Calculate01\obj\Debug\Calculate01.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork01\Calculate01\obj\Debug\Calculate01.pdb
+C:\Users\19710\Desktop\CSharpHomeWork01\Calculate01\obj\Debug\Calculate01.csproj.CoreCompileInputs.cache
+C:\Users\19710\Desktop\CSharpHomeWork01\Calculate01\bin\Debug\Calculate01.exe.config
+C:\Users\19710\Desktop\CSharpHomeWork01\Calculate01\bin\Debug\Calculate01.exe
+C:\Users\19710\Desktop\CSharpHomeWork01\Calculate01\bin\Debug\Calculate01.pdb
+C:\Users\19710\Desktop\CSharpHomeWork01\Calculate01\obj\Debug\Calculate01.exe
+C:\Users\19710\Desktop\CSharpHomeWork01\Calculate01\obj\Debug\Calculate01.pdb
