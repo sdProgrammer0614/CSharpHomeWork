@@ -1,0 +1,7 @@
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork03\ShapeClass\bin\Debug\ShapeClass.exe.config
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork03\ShapeClass\bin\Debug\ShapeClass.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork03\ShapeClass\bin\Debug\ShapeClass.pdb
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork03\ShapeClass\obj\Debug\ShapeClass.csprojAssemblyReference.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork03\ShapeClass\obj\Debug\ShapeClass.csproj.CoreCompileInputs.cache
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork03\ShapeClass\obj\Debug\ShapeClass.exe
+C:\Users\19710\Desktop\study\CSharpHomeWork\CSharpHomeWork03\ShapeClass\obj\Debug\ShapeClass.pdb
