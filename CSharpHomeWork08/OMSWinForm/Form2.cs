@@ -59,9 +59,8 @@ namespace OMSWinForm
                 {
                     List<OrderItem> items = (List<OrderItem>)itemsBindingSource.DataSource;
                     Order order = new Order(uint.Parse(OrderId), Customer, items);
-                    CurrentOrder = order;
-                    OrderService.AddOrder(CurrentOrder);
-                    MessageBox.Show("修改成功！");
+                    OrderService.AddOrder(order);
+                    MessageBox.Show("添加成功！");
                 }
                 this.Close();
             }
