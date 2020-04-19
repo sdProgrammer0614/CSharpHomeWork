@@ -36,17 +36,19 @@ namespace Spider
         {
             while (true)
             {
+                string usedUrl = null;
                 foreach (string url in urls.Keys)
                 {
                     if ((bool)urls[url])
                         continue;
                     currentUrl = url;
+                    usedUrl = url;
                 }
 
-                if (currentUrl == null || count > 10)
+                if (usedUrl == null || count > 20)
                     break;
-                string html = DownLoad(currentUrl);         // 下载
-                urls[currentUrl] = true;
+                string html = DownLoad(usedUrl);         // 下载
+                urls[usedUrl] = true;
                 count++;
                 Parse(html);                                // 解析，并加入新的链接
             }
