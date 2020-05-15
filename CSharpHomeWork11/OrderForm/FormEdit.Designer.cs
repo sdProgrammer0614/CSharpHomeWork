@@ -142,7 +142,7 @@
             // txtOrderId
             // 
             this.txtOrderId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtOrderId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderBindingSource, "OrderId", true));
+            this.txtOrderId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.orderBindingSource, "Id", true));
             this.txtOrderId.Location = new System.Drawing.Point(103, 3);
             this.txtOrderId.Name = "txtOrderId";
             this.txtOrderId.Size = new System.Drawing.Size(341, 21);

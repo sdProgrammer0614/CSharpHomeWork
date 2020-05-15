@@ -9,15 +9,13 @@ using System.Xml.Serialization;
 
 namespace OrderApp
 {
-
-    /**
-     **/
     public class Order : IComparable<Order>
     {
-        private List<OrderItem> items;
+        [Key]
+        public string Id { get; set; }
 
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int OrderId { get; set; }
+        public string CustomerId { get; set; }
+        [ForeignKey("CustomerId")]
 
         public Customer Customer { get; set; }
 
@@ -25,24 +23,26 @@ namespace OrderApp
 
         public DateTime CreateTime { get; set; }
 
-        public Order() { items = new List<OrderItem>(); CreateTime = DateTime.Now; }
+        public List<OrderItem> Items { get; set; }
 
-        public Order(int orderId, Customer customer, List<OrderItem> items)
+        public Order()
         {
-            this.OrderId = orderId;
-            this.Customer = customer;
-            this.CreateTime = DateTime.Now;
-            this.items = (items == null) ? new List<OrderItem>() : items;
+            Id = Guid.NewGuid().ToString();
+            Items = new List<OrderItem>();
+            CreateTime = DateTime.Now;
         }
 
-        public List<OrderItem> Items
+        public Order(Customer customer, List<OrderItem> items) : this()
         {
-            get { return items; }
+            this.Customer = customer;
+            this.CreateTime = DateTime.Now;
+            if (items != null)
+                Items = items;
         }
 
         public double TotalPrice
         {
-            get => items.Sum(item => item.TotalPrice);
+            get => Items == null ? 0 : Items.Sum(item => item.TotalPrice);
         }
 
         public void AddItem(OrderItem orderItem)
@@ -60,8 +60,8 @@ namespace OrderApp
         public override string ToString()
         {
             StringBuilder strBuilder = new StringBuilder();
-            strBuilder.Append($"Id:{OrderId}, customer:{Customer},orderTime:{CreateTime},totalPrice：{TotalPrice}");
-            items.ForEach(od => strBuilder.Append("\n\t" + od));
+            strBuilder.Append($"Id:{Id}, customer:{Customer},orderTime:{CreateTime},totalPrice：{TotalPrice}");
+            Items.ForEach(od => strBuilder.Append("\n\t" + od));
             return strBuilder.ToString();
         }
 
@@ -69,13 +69,13 @@ namespace OrderApp
         {
             var order = obj as Order;
             return order != null &&
-                   OrderId == order.OrderId;
+                   Id == order.Id;
         }
 
         public override int GetHashCode()
         {
             var hashCode = -531220479;
-            hashCode = hashCode * -1521134295 + OrderId.GetHashCode();
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(CustomerName);
             hashCode = hashCode * -1521134295 + CreateTime.GetHashCode();
             return hashCode;
@@ -84,7 +84,7 @@ namespace OrderApp
         public int CompareTo(Order other)
         {
             if (other == null) return 1;
-            return this.OrderId.CompareTo(other.OrderId);
+            return this.Id.CompareTo(other.Id);
         }
     }
 }

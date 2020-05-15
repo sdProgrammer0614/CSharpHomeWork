@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace OrderApp
 {
-
     class MainClass
     {
         public static void Main()
@@ -57,7 +56,10 @@ namespace OrderApp
                 //OrderService os2 = new OrderService();
                 //os2.Import("./orders.xml");
                 //os2.Orders.ForEach(order => Console.WriteLine(order));
-
+                using (var db = new OrderContext())
+                {
+                    var order = db.OrderItems.FirstOrDefault();
+                }
             }
             catch (Exception e)
             {

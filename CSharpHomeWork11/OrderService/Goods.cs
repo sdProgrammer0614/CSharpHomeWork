@@ -18,9 +18,9 @@ namespace OrderApp
         {
         }
 
-        public Goods(string iD, string name, double price)
+        public Goods(string name, double price)
         {
-            ID = iD;
+            ID = Guid.NewGuid().ToString();
             Name = name;
             Price = price;
         }

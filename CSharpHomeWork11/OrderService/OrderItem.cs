@@ -8,28 +8,32 @@ using System.Threading.Tasks;
 
 namespace OrderApp
 {
-
-    /**
-     **/
     public class OrderItem
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int OrderItemId { get; set; }
+        [Key]
+        public string Id { get; set; }
+
         public int Index { get; set; }
+
+        public string GoodsItemId { get; set; }
+        [ForeignKey("GoodsItemId")]
 
         public Goods GoodsItem { get; set; }
 
         public string GoodsName { get => GoodsItem != null ? this.GoodsItem.Name : ""; }
 
         public double UnitPrice { get => GoodsItem != null ? this.GoodsItem.Price : 0.0; }
-        
+
+        public string OrderId { get; set; }
+
         public int Quantity { get; set; }
 
-        public int OrderId { get; set; }
+        public OrderItem()
+        {
+            Id = Guid.NewGuid().ToString();
+        }
 
-        public OrderItem() { }
-
-        public OrderItem(int index, Goods goods, int quantity)
+        public OrderItem(int index, Goods goods, int quantity) : this()
         {
             this.Index = index;
             this.GoodsItem = goods;

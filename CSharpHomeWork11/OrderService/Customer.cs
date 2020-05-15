@@ -15,11 +15,11 @@ namespace OrderApp
 
         public Customer()
         {
+            ID = Guid.NewGuid().ToString();
         }
 
-        public Customer(string iD, string name)
+        public Customer(string name) : this()
         {
-            ID = iD;
             Name = name;
         }
 

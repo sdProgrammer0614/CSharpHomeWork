@@ -64,7 +64,14 @@ namespace OrderForm
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //TODO 加上订单合法性验证
+            CurrentOrder.CustomerId = CurrentOrder.Customer.ID;
+            CurrentOrder.Customer = null;
+            CurrentOrder.Items.ForEach(item => {
+                item.GoodsItemId = item.GoodsItem.ID;
+                item.GoodsItem = null;
+                item.OrderId = CurrentOrder.Id;
+            });
+
             this.Close();
         }
 

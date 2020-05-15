@@ -1,5 +1,4 @@
-﻿
-using OrderApp;
+﻿using OrderApp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,14 +23,14 @@ namespace OrderForm
             InitializeComponent();
             orderService = new OrderService();
             context = new OrderContext();
-
+            
             List<Customer> customers = context.Customers.ToList();
             List<Order> orders = context.Orders.ToList();
             List<OrderItem> orderItems = context.OrderItems.ToList();
             List<Goods> goods = context.Goods.ToList();
 
             orders.ForEach(order => orderService.Orders.Add(order));
-
+            
             orderBindingSource.DataSource = orderService.Orders;
             cbField.SelectedIndex = 0;
             txtValue.DataBindings.Add("Text", this, "Keyword");
@@ -85,7 +84,7 @@ namespace OrderForm
                 MessageBox.Show("请选择一个订单进行删除");
                 return;
             }
-            orderService.RemoveOrder(order.OrderId);
+            orderService.RemoveOrder(order.Id);
             QueryAll();
         }
 
@@ -118,8 +117,7 @@ namespace OrderForm
                     orderBindingSource.DataSource = orderService.Orders;
                     break;
                 case 1://根据ID查询
-                    int.TryParse(Keyword, out int id);
-                    Order order = orderService.GetOrder(id);
+                    Order order = orderService.GetOrder(Keyword);
                     List<Order> result = new List<Order>();
                     if (order != null) result.Add(order);
                     orderBindingSource.DataSource = result;
